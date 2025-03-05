@@ -1,15 +1,18 @@
 package pet_demo;
 
 public class Dog extends Pet{
-    public Dog(){
-        super("Fido");
-    }
+    private String sound;
 
-    public Dog(String name){
+    public Dog(String name, String sound){
         super(name);
+        this.sound = sound;
     }
     @Override
     public String speak(){
-        return "Bark";
+        return sound;
+    }
+
+    public void dig(){
+        System.out.println(super.getName() +" is digging");
     }
 }

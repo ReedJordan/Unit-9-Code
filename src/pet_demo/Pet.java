@@ -3,10 +3,6 @@ package pet_demo;
 public class Pet {
     private String name;
 
-    public Pet(){
-        name = "Fido";
-    }
-
     public Pet(String name){
         this.name = name; //default pet name
     }
